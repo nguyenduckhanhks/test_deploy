@@ -1,11 +1,9 @@
 FROM node:14.15-alpine as frontend-stage
 
-WORKDIR /app
+WORKDIR /var/www/html/frontend
+
+COPY package.json package-lock.json ./
+
+RUN npm install
 
 COPY . .
-
-RUN yarn
-
-RUN npm run build
-
-CMD [ "npm", "start" ]

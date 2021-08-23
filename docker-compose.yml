@@ -7,14 +7,13 @@ services:
         image: nginx:1.19-alpine
         restart: unless-stopped
         ports:
-            - "80:80"
+            - "8081:80"
         volumes: 
             - ./backend:/var/www/html/backend
-            - enlive-vendor:/var/www/html/backend/vendor
             - ./frontend:/var/www/html/frontend
-            - ./nginx/nginx.conf:/etc/nginx/conf.d/default.conf
+            - ./nginx/default.conf:/etc/nginx/conf.d/default.conf
         depends_on:
-            - frontend
+            - backend
         networks:
             - deploy
     backend:
@@ -23,31 +22,40 @@ services:
         restart: unless-stopped
         volumes: 
             - ./backend:/var/www/html/backend
-            - enlive-vendor:/var/www/html/backend/vendor
+            - /var/www/html/backend/vendor
         depends_on:
-            - mysql
+            - mysqldb
+        extra_hosts:
+            - 'dockerhost:host-gateway'
         networks:
             - deploy
     frontend:
         container_name: linktooo_fe
         build: ./frontend
-        restart: unless-stopped
+        # restart: unless-stopped
         volumes:
-            - ./frontend:/app
-            - /app/node_modules
-            - /app/.next
+            - ./frontend:/var/www/html/frontend
+            - /var/www/html/frontend/node_modules
+            - /var/www/html/frontend/.next
         depends_on:
             - backend
+            - nginx
+        command:
+            - /bin/sh
+            - -c
+            - |
+                ./wait-for-it.sh backend:9000
+                npm run build && npm start
         networks:
             - deploy
-    mysql:
+    mysqldb:
         image: mysql:5.7
         command: --default-authentication-plugin=mysql_native_password
         environment:
-        MYSQL_DATABASE: linktooo
-        MYSQL_USER: root
-        MYSQL_PASSWORD: root
-        MYSQL_ROOT_PASSWORD: root
+            MYSQL_DATABASE: linktooo
+            MYSQL_USER: admin
+            MYSQL_PASSWORD: admin
+            MYSQL_ROOT_PASSWORD: root
         ports: 
             - 3306:3306
         volumes: 
