@@ -1,0 +1,111 @@
+.user-profile-container {
+    padding: 30px 0 20px 0;
+    margin-bottom: 20px;
+
+    .user-profile__thumb {
+        width: 100%;
+        text-align: center;
+
+        img {
+            display: block;
+            width: 120px;
+            border-radius: 100%;
+            margin: auto;
+        }
+    }
+
+    .group-btn {
+        display: flex;
+        justify-content: space-around;
+        margin: 20px 0;
+
+        .update-cpn {
+            width: 160px;
+
+            .button--custom {
+                border: none;
+                border-radius: 10px;
+                font-size: 16px;
+                padding: 10px;
+                text-align: center;
+                width: 100%;
+                background-color: #5e6df5!important;
+                color: #fff!important;
+                width: 160px;
+            }
+        }
+    }
+
+    .profile-form-row {
+        margin-left: 5%;
+        max-width: 90%;
+        width: 100%;
+        margin-bottom: 10px;
+
+        .profile-title {
+            display: inline!important;
+            color: #000!important;
+            width: 100%;
+            padding-bottom: 10px;
+            text-transform: uppercase;
+            font-size: 12px;
+            letter-spacing: 1px;
+            font-weight: 700;
+        }
+
+        .button-edit-custom-1 {
+            background-color: rgba(255, 255, 255, 0);
+            border: none;
+        }
+
+        .profile-form__input {
+            width: 100%;
+            border: none;
+            background-color: #fff;
+            padding: 12px 10px;
+            border-radius: 10px;
+            font-size: 17px;
+        }
+
+        .profile-form__textarea {
+            border-radius: 10px;
+            font-size: 17px;
+        }
+
+        .list--themes-button {
+            display: grid;
+            grid-gap: .75rem;
+            gap: .75rem;
+            grid-template-columns: repeat(2,minmax(0,1fr));
+        }
+
+        @media (min-width: 1024px){
+            .list--themes-button {
+                grid-template-columns: repeat(4,minmax(0,1fr));
+            }
+        }
+
+        @media (min-width: 768px){
+            .list--themes-button {
+                grid-template-columns: repeat(3,minmax(0,1fr));
+            }
+        }
+
+        .button-theme {
+            --bg-opacity: 1;
+            background-color: #fff;
+            border: none;
+            border-radius: .5rem;
+            box-shadow: 0 3px 6px 0 rgb(54 54 54 / 20%);
+            display: block;
+            flex-direction: column;
+            height: 100%;
+            overflow: hidden;
+            position: relative;
+
+            .image-theme {
+                width: 100%;
+            }
+        }
+    }
+}

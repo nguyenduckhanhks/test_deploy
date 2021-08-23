@@ -1,0 +1,203 @@
+#theme_canvas_4 {
+    $primary-color: #65a2ce;
+    $primary-color1: #cde8f0;
+    $primary-color2: #b2dced;
+    $primary-color3: #4988b2;
+    $secondary-color: #65a2ce;
+    $secondary-color1: #65a2ce;
+    $white-color: #fff;
+    $white-transparent: rgba(255, 255, 255, 0);
+    $black-color: #000;
+
+// --------------------------------------------------general-----------------------------------------------------
+    font-family: Roboto !important;
+    .theme---header {
+        background: linear-gradient(60deg,$primary-color, $primary-color1, $primary-color2) !important;
+    }
+
+// --------------------------------------------------page links-----------------------------------------------------
+
+    //background
+    .theme---page-links {
+        background: url('../assets/themes-images/background/background_image_4.png');
+        background-size: cover !important;
+    }
+
+    //avatar
+    .theme---avatar img {
+        box-shadow: 0 5px 5px 0 rgb(0 0 0 / 20%), 0 1px 2px 0 rgb(0 0 0 / 20%) !important;
+    }
+
+    //fullname
+    .user-profile__name {
+        font-size: 23px !important;
+        text-transform: uppercase;
+        color: $primary-color !important;
+    }
+    .user-profile__username {
+        color: $primary-color3 !important;   
+    }
+
+    .description-custom {
+        color: $primary-color !important;   
+    }
+
+    //link card
+    .theme---link-card-child {
+        font-weight: 300;
+        font-style: normal;
+        color: $white-color !important;
+        text-decoration: none;
+        letter-spacing: 0.07em;
+    }
+
+    //footer
+    .theme---footer {
+        background-color: $primary-color1 !important;
+    }
+
+// --------------------------------------------------page admin-----------------------------------------------------
+    
+    //background
+    .theme---background-image-page {
+        background: url('../assets/themes-images/background/background_image_4.png') !important;
+        background-size: cover !important;
+    }
+
+    .theme---admin-content {
+        background: #f6f9fa00 !important;
+        ul {
+            background: padding-box;
+            border: none !important;
+        }
+    }
+
+    //Menu
+    .theme---menu h2{
+        font-size: 22px;
+        color: $primary-color !important;
+    }
+
+    // button add new link
+    .theme---add-new-link {
+        background-color: $primary-color !important;
+        color: $white-color !important;
+        font-size: 18px;
+    }
+
+    // link card admin
+    .theme---card-link-admin {
+        background: linear-gradient(60deg,$primary-color, $primary-color1, $primary-color2) !important;
+
+        .theme---switch {
+            background-color: $primary-color !important;
+        }
+
+        .theme---title-input{
+            background-color: $white-transparent !important;
+        }
+    }
+
+    //button edit pencil
+    .theme---buttom-edit {
+        background-color: $white-transparent !important;
+        :hover, :active {
+            color: $white-color !important;
+        }
+    }
+
+    // close button
+    .theme---close-button {
+        background-color: $white-transparent !important;
+        color: $white-color !important;
+    }
+
+    //social edit
+    .theme---social-edit-form {
+        .socials-label {
+            font-size: 14px !important;
+        }
+        input,
+        textarea {
+            font-size: 18px;
+        }
+    }
+
+    //profile edit
+    .theme---profile-edit {
+        background-color: $white-transparent !important;
+        .profile-title {
+            font-size: 14px !important;
+        }
+        input,
+        textarea {
+            font-size: 18px;
+        }
+    }
+
+    //footer
+    .theme---link-admin {
+        font-size: 18px !important;
+        color: $white-color !important;
+    }
+    .theme---admin-footer {
+        background: linear-gradient(120deg, $secondary-color1, $secondary-color, $secondary-color) !important;
+    }
+
+//----------------------------------------------------------------other css--------------------------------------------------
+
+    // submenu(menu change icon; remove) - menu-admin - button primary
+    .theme---sub-menu-header,
+    .theme---button-primary,
+    .theme---button-danger {
+        background: linear-gradient(120deg, $primary-color, $primary-color1) !important;
+        font-size: 130%;
+        h2 {
+            font-size: 20px;
+            color: $white-color !important;
+        }
+    }
+
+    .theme---button-cancel,
+    .theme---button-remove  {
+        background: linear-gradient(120deg, $primary-color2, $white-color) !important;
+        color: $black-color !important;
+        font-size: 130%;
+    }
+
+    .theme---sub-menu-body {
+        background: linear-gradient(120deg, $primary-color1, $primary-color2, $secondary-color1) !important;
+    }
+
+    // .theme---link-card{
+    //     background-color: $primary-color !important;
+    // }
+    .theme---card-0 {
+        background-color: $primary-color !important;
+    }
+
+    .theme---card-1 {
+        background-color: $primary-color1 !important;
+        color: $primary-color !important;
+    }
+
+    .selected {
+        border-bottom: 2px solid $primary-color !important;
+    }
+
+    // link bottom admin; social
+    .theme---icon-social {
+        color: $primary-color !important;
+        :hover {
+            color: $primary-color !important;
+        }
+        span:hover {
+            transform: scale(1.075);
+        }
+    }
+
+    // menu theme
+    .button-theme.active {
+        border: 4px solid $primary-color !important;
+    }
+}

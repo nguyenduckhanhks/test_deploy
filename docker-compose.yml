@@ -1,0 +1,56 @@
+version: '3.7'
+networks:
+    deploy:
+services:
+    nginx:
+        container_name: nginx
+        image: nginx:1.19-alpine
+        restart: unless-stopped
+        ports:
+            - "80:80"
+        volumes: 
+            - ./backend:/var/www/html/backend
+            - enlive-vendor:/var/www/html/backend/vendor
+            - ./frontend:/var/www/html/frontend
+            - ./nginx/nginx.conf:/etc/nginx/conf.d/default.conf
+        depends_on:
+            - frontend
+        networks:
+            - deploy
+    backend:
+        container_name: linktooo_be
+        build: ./backend
+        restart: unless-stopped
+        volumes: 
+            - ./backend:/var/www/html/backend
+            - enlive-vendor:/var/www/html/backend/vendor
+        depends_on:
+            - mysql
+        networks:
+            - deploy
+    frontend:
+        container_name: linktooo_fe
+        build: ./frontend
+        restart: unless-stopped
+        volumes:
+            - ./frontend:/app
+            - /app/node_modules
+            - /app/.next
+        depends_on:
+            - backend
+        networks:
+            - deploy
+    mysql:
+        image: mysql:5.7
+        command: --default-authentication-plugin=mysql_native_password
+        environment:
+        MYSQL_DATABASE: linktooo
+        MYSQL_USER: root
+        MYSQL_PASSWORD: root
+        MYSQL_ROOT_PASSWORD: root
+        ports: 
+            - 3306:3306
+        volumes: 
+            - ./docker/mysql:/var/lib/mysql/
+        networks:
+            - deploy

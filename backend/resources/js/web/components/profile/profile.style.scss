@@ -1,0 +1,76 @@
+.mw-90 {
+    max-width: 90% !important;
+}
+
+.mw-100 {
+    max-width: 100% !important;
+}
+
+.ml-5 {
+    margin-left: 5% !important;
+}
+
+.inline-imp {
+    display: inline !important;
+}
+
+.button-edit-custom-1 {
+    background-color: #f6f9fa !important;
+    border: none !important;
+    margin-left: 5px !important;
+    margin-bottom: 5px !important;
+}
+
+.group-btn {
+    margin: 20px 0px; 
+    display: flex; 
+    justify-content: space-around;
+    .update-cpn {
+        width: 160px;
+    }
+}
+
+.ant-upload-list {
+    visibility: hidden !important;
+    height: 0px !important;
+}
+
+.list--themes-button {
+    display: grid;
+    grid-gap: .75rem;
+    gap: .75rem;
+    grid-template-columns: repeat(2,minmax(0,1fr));
+}
+
+@media (min-width: 1024px){
+    .list--themes-button {
+        grid-template-columns: repeat(4,minmax(0,1fr));
+    }
+}
+
+@media (min-width: 768px){
+    .list--themes-button {
+        grid-template-columns: repeat(3,minmax(0,1fr));
+    }
+}
+
+.button-theme {
+    border-radius: .5rem;
+    display: block;
+    flex-direction: column;
+    height: 100%;
+    overflow: hidden;
+    position: relative;
+    box-shadow: 0 3px 6px 0 rgb(54 54 54 / 20%);
+    background-color: #fff;
+    border: none;
+    --bg-opacity: 1;
+}
+
+.button-theme.active {
+    border: 2px solid red;
+}
+
+.image-theme {
+    width: 100%;
+}

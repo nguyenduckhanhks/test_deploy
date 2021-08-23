@@ -1,0 +1,217 @@
+#theme_canvas_11 {
+    $primary-color: #f2f3f1;
+    $primary-color1: #cfd1ca;
+    $primary-color2: #f2f3f1;
+    $text-color: #fff;
+    $white-color: #fff;
+    $white-transparent: rgba(255, 255, 255, 0);
+    $black-color: #000;
+
+// --------------------------------------------------general-----------------------------------------------------
+    font-family: Roboto !important;
+    .theme---header {
+        background: linear-gradient(60deg, $primary-color1, $primary-color2) !important;
+    }
+
+// --------------------------------------------------page links-----------------------------------------------------
+
+    //background
+    .theme---page-links {
+        background: url('../assets/themes-images/background/background_image_11.png');
+        background-size: cover !important;
+    }
+
+    //fullname
+    .user-profile__name {
+        font-size: 23px !important;
+        text-transform: uppercase;
+        color: $black-color !important;
+    }
+    .user-profile__username {
+        color: $black-color !important;   
+    }
+
+    .description-custom {
+        color: $black-color !important;   
+    }
+
+    //link card
+    .theme---link-card-child {
+        font-weight: 300;
+        font-style: normal;
+        color: $black-color !important;
+        text-decoration: none;
+        letter-spacing: 0.07em;
+    }
+
+    //footer
+    .theme---footer {
+        background: linear-gradient(60deg, $primary-color1, $primary-color2) !important;
+    }
+
+// --------------------------------------------------page admin-----------------------------------------------------
+    
+    //background
+    .theme---background-image-page {
+        background: url('../assets/themes-images/background/background_image_11.png') !important;
+        background-size: cover !important;
+    }
+
+    .theme---admin-content {
+        background: #f6f9fa00 !important;
+        ul {
+            background: $primary-color !important;
+            border: none !important;
+        }
+    }
+
+    //Menu
+    .theme---menu h2{
+        font-size: 22px;
+        color: $black-color !important;
+    }
+
+    // button add new link
+    .theme---add-new-link {
+        background-color: $primary-color1 !important;
+        color: $black-color !important;
+        font-size: 18px;
+    }
+
+    // link card admin
+    .theme---card-link-admin {
+        background: $primary-color1 !important;
+
+        .theme---switch {
+            background-color: $primary-color !important;
+        }
+
+        .theme---title-input{
+            background-color: $white-transparent !important;
+            color: $black-color !important;
+        }
+
+        .theme---buttom-edit {
+            background-color: $white-transparent !important;
+            color: $black-color !important;
+            :hover, :active, :focus {
+                color: $black-color !important;
+            }
+        }
+    }
+
+    //button edit pencil
+    .theme---buttom-edit {
+        background-color: $white-transparent !important;
+        color: $black-color !important;
+        :hover, :active, :focus {
+            color: $black-color !important;
+        }
+    }
+
+    // close button
+    .theme---close-button {
+        background-color: $white-transparent !important;
+        color: $black-color !important;
+    }
+
+    //social edit
+    .theme---social-edit-form {
+        .socials-label {
+            font-size: 14px !important;
+            color: $black-color !important;
+        }
+        input,
+        textarea {
+            font-size: 18px;
+        }
+    }
+
+    //profile edit
+    .theme---profile-edit {
+        background-color: $white-transparent !important;
+        .profile-title {
+            font-size: 14px !important;
+            color: $black-color !important;
+        }
+        input,
+        textarea {
+            font-size: 18px;
+        }
+    }
+
+    //footer
+    .theme---link-admin {
+        font-size: 18px !important;
+        color: $black-color !important;
+    }
+    .theme---admin-footer {
+        background: linear-gradient(60deg, $primary-color1, $primary-color2) !important;
+    }
+
+//----------------------------------------------------------------other css--------------------------------------------------
+
+    // submenu(menu change icon; remove) - menu-admin - button primary
+    .theme---sub-menu-header,
+    .theme---button-primary,
+    .theme---button-danger {
+        background: $primary-color2 !important;
+        font-size: 130%;
+        color: $black-color !important;
+        h2 {
+            font-size: 20px;
+            color: $black-color !important;
+        }
+    }
+
+    .theme---button-cancel,
+    .theme---button-remove  {
+        background: linear-gradient(120deg, $primary-color2, $primary-color2) !important;
+        color: $black-color !important;
+        font-size: 130%;
+    }
+
+    .theme---button-danger,
+    .theme---button-remove {
+        background: $white-color !important;
+        color: $black-color !important;
+    }
+
+    .theme---sub-menu-body {
+        background: $primary-color1 !important;
+        border: 2px solid $primary-color !important;
+        h3 {
+            color: $black-color !important;
+        }
+    }
+
+    .theme---link-card{
+        background-color: $primary-color1 !important;
+        color: $white-color !important;
+    }
+
+    .theme---link-card.theme---link-card-child {
+        border: 0px solid $primary-color1 !important;
+        border-radius: 10px !important;
+    }
+
+.selected{
+        border-bottom: 2px solid $primary-color2 !important;
+    }
+
+    // link bottom admin; social
+    .theme---icon-social {
+        color: $primary-color1 !important;
+        :hover {
+            color: $primary-color1 !important;
+        }
+        span:hover {
+            transform: scale(1.075);
+        }
+    }
+
+    // menu theme
+    .button-theme.active {
+        border: 4px solid $primary-color1 !important;
+    }
+}

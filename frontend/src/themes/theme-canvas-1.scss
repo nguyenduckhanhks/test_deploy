@@ -1,0 +1,191 @@
+#theme_canvas_1 {
+    $primary-color: #000000;
+    $primary-color1: #75757559;
+    $primary-color2: #717171;
+    $primary-color3: #383737ab;
+    $secondary-color: #ffd415;
+    $white-color: #fff;
+    $white-transparent: rgba(255, 255, 255, 0);
+    $black-color: #000;
+
+// --------------------------------------------------general-----------------------------------------------------
+    font-family: Roboto !important;
+
+    
+    .theme---header {
+        background: linear-gradient(60deg,$primary-color, $primary-color2) !important;
+    }
+
+// --------------------------------------------------page links-----------------------------------------------------
+
+    //background
+    .theme---page-links {
+        background: url('../assets/themes-images/background/background_image.png');
+        background-size: cover !important;
+    }
+
+    //avatar
+    .theme---avatar img {
+        border: 5px solid $primary-color !important;
+        box-shadow: 0 5px 5px 0 rgb(0 0 0 / 20%), 0 1px 2px 0 rgb(0 0 0 / 20%) !important;
+    }
+
+    //fullname
+    .user-profile__name {
+        font-size: 23px !important;
+        text-transform: uppercase;
+        color: $black-color !important;
+    }
+
+    //link card
+    .theme---link-card-child {
+        font-weight: 400;
+        font-style: normal;
+        color: $white-color !important;
+        text-decoration: none;
+        letter-spacing: 0.07em;
+        font-size: 20px;
+    }
+
+    //footer
+    .theme---footer {
+        background-color: $primary-color1 !important;
+    }
+    .theme---admin-footer {
+        background: #f0f2f5 !important;
+    }
+
+// --------------------------------------------------page links-----------------------------------------------------
+    
+    //background
+    .theme---background-image-page {
+        background: url('../assets/themes-images/background/background_image.png') !important;
+        background-size: cover !important;
+    }
+
+    .theme---admin-content {
+        background: #f6f9fa00 !important;
+    }
+
+    //Menu
+    .theme---menu h2{
+        font-size: 20px;
+    }
+
+    // button add new link
+    .theme---add-new-link {
+        background-color: $primary-color !important;
+        color: $white-color !important;
+        font-size: 18px;
+    }
+
+    // link card admin
+    .theme---card-link-admin {
+        background-color: $primary-color3 !important;
+
+        .theme---switch {
+            background-color: $primary-color !important;
+        }
+
+        .theme---title-input{
+            background-color: $white-transparent !important;
+        }
+    }
+
+    //button edit pencil
+    .theme---buttom-edit {
+        background-color: $white-transparent !important;
+        :hover, :active {
+            color: $white-color !important;
+        }
+    }
+
+    // close button
+    .theme---close-button {
+        background-color: $white-transparent !important;
+        color: $white-color !important;
+    }
+
+    //cancel button
+    .theme---button-cancel {
+        background-color: $white-color !important;
+        color: $black-color !important;
+    }
+
+    //social edit
+    .theme---social-edit-form {
+        .socials-label {
+            font-size: 14px !important;
+        }
+        input,
+        textarea {
+            font-size: 18px;
+        }
+    }
+
+    //profile edit
+    .theme---profile-edit {
+        background-color: $white-transparent !important;
+        .profile-title {
+            font-size: 14px !important;
+        }
+        input,
+        textarea {
+            font-size: 18px;
+        }
+    }
+
+    //footer
+    .theme---link-admin {
+        font-size: 18px !important;
+    }
+
+//----------------------------------------------------------------other css--------------------------------------------------
+
+    // submenu(menu change icon; remove) - menu-admin - button primary
+    .theme---sub-menu-header,
+    .theme---button-primary {
+        background-color: $primary-color !important;
+        h2 {
+            color: $white-color !important;
+        }
+    }
+
+    .theme---sub-menu-body {
+        background-color: $primary-color1 !important;
+    }
+
+    .theme---link-card{
+        background-color: $primary-color !important;
+    }
+
+    .theme---button-remove {
+        background-color: $white-color !important;
+        color: $black-color !important;
+    }
+
+    .theme---button-danger {
+        background-color: $primary-color !important;
+    }
+
+    .selected {
+        border-bottom: 2px solid $primary-color !important;
+    }
+
+    // link bottom admin; social
+    .theme---link-admin,
+    .theme---icon-social {
+        color: $primary-color !important;
+        :hover {
+            color: $primary-color !important;
+        }
+        span:hover {
+            transform: scale(1.075);
+        }
+    }
+
+    // menu theme
+    .button-theme.active {
+        border: 4px solid $primary-color !important;
+    }
+}

@@ -1,0 +1,137 @@
+.page-container {
+    height: 100vh;
+    max-width: 1024px;
+    margin: auto;
+    font-family: Roboto;
+
+    .page-cover {
+        background-color: #7f89f17a;
+    }
+
+    .page-body{
+        padding: 30px 0 100px 0;
+
+        .page-scroll-links {
+            overflow: scroll;
+            overflow-x: hidden;
+
+            .user-profile_thumb {
+                width: 100%;
+                text-align: center;
+                img {
+                    display: block;
+                    width: 120px;
+                    border-radius: 100%;
+                    margin: auto;
+                }
+            }
+
+            .user-profile__username {
+                width: 100%;
+                text-align: center;
+                font-size: 22px;
+                padding-top: 15px;
+            }
+
+            .user-profile__name {
+                width: 100%;
+                text-align: center;
+                padding: 0px 0;
+                font-size: 23px;
+                font-weight: 700;
+                color: #0d3567;
+                text-transform: uppercase;
+                margin-top: 10px;
+            }
+
+            .user-profile__description {
+                width: 80%;
+                margin-left: 10%;
+                font-size: 15px;
+                font-weight: bold;
+                text-align: center;
+                margin-top: 5px;
+                margin-bottom: 20px;
+            }
+
+            .list-links {
+                padding: 5px 20px 0px 20px;
+                .links-card {
+                    height: 60px;
+                    border-radius: 15px;
+                    .links-card-detail {
+                        display: flex;
+                        margin-bottom: 10px;
+                        text-align: center;
+                        align-items: center;
+                        min-height: 60px;
+                        background-color: #606ef7;
+                        font-size: 18px;
+                        line-height: 30px;
+                        color: white !important;
+                        border-radius: 15px;
+                        padding: 10px 0px;
+                        width: 100%;
+                        box-shadow: 0 5px 5px 0 rgb(0 0 0 / 8%), 0 1px 2px 0 rgb(0 0 0 / 20%) !important;
+
+                        .img-links {
+                            margin-left: 5px;
+                            position: absolute;
+                            img {
+                                vertical-align: middle;
+                                border-style: none;
+                                max-width: 50px;
+                                border-radius: 10px;
+                            }
+                        }
+
+                        .card-link-url {
+                            background-color: #ffffff00;
+                            font-size: 18px;
+                            color: #fff;
+                            font-style: normal;
+                            font-weight: 300;
+                            letter-spacing: .07em;
+                            text-decoration: none;
+                            padding-left: 70px;
+                            padding-right: 70px;
+                            text-align: left;
+                        }
+                    }
+                }
+            }
+        }
+        .page-scroll-links::-webkit-scrollbar {
+            display: none;
+        }
+    }
+
+    .footer-links {
+        background-color: #fff0;
+        padding: 0!important;
+        .list-socials {
+            bottom: 40px;
+            max-width: 1024px;
+            padding-top: 30px;
+            padding-bottom: 10px;
+            position: fixed;
+            text-align: center;
+            width: 100%;
+            a {
+                margin-right: 10px;
+            }
+        }
+        .footer-logo {
+            bottom: 0;
+            max-width: 1024px;
+            position: fixed;
+            width: 100%;
+            z-index: 1000;
+            background-color: #606ef7;
+            .logo-footer {
+                margin-left: calc(50% - 50px);
+                width: 100px;
+            }
+        }
+    }
+}

@@ -1,0 +1,131 @@
+@import '~antd/dist/antd.css';
+#app {
+    max-width: 1024px;
+    margin: auto;
+}
+body {
+    min-height: 100vh;
+    /* mobile viewport bug fix */
+    min-height: -webkit-fill-available;
+}
+
+.height100 {
+    height: 100%;
+}
+
+html {
+    height: -webkit-fill-available;
+}
+
+.menu-custom {
+    background-color: rgb(81 102 232) !important;
+    border-right: none;
+    width: 100px;
+}
+.menu-custom .ant-menu-submenu-title {
+    background-color: rgb(81 102 232) !important;
+    border-right: none;
+}
+.menu-custom .ant-menu-sub .ant-menu-item {
+    padding-left: 10px !important;
+}
+.menu-custom:focus {
+    background-color: rgb(81 102 232) !important;
+    border-right: none;
+}
+
+.ant-menu-horizontal:not(.ant-menu-dark) > .ant-menu-item, .ant-menu-horizontal:not(.ant-menu-dark) > .ant-menu-submenu {
+    padding: 0px 0px;
+}
+
+.result-link {
+    font-size: 16px;
+    color: #6270f8;
+}
+
+.page__content--with-header {
+    padding-top: 75px !important;
+}
+
+.header__logo__admin {
+    text-align: center;
+    width: 100%;
+}
+
+.header__icon__admin {
+    position: absolute;
+    right: 20px;
+}
+
+.height-scroll-link-admin {
+    height: 100vh !important;
+    overflow: scroll;
+    padding-bottom: 100px;
+    background: #f6f9fa;
+}
+
+.pt-5px {
+    padding-top: 5px !important;
+}
+
+.logo-custom {
+    float: left;
+    width: 40vw;
+    max-width: 150px;
+}
+
+.height-scroll-link-admin .ant-menu-horizontal {
+    width: calc(100% + 40px);
+    margin-left: -20px;
+}
+
+.footer {
+    text-align: center;
+    text-align: center;
+    position: fixed;
+    bottom: 0px;
+    width: 100%;
+    z-index: 99999;
+    padding-top: 10px;
+    height: 40px;
+    max-width: 1024px;
+}
+
+.footer-links {
+    padding: 0px !important;
+    background-color: #fff0;
+}
+
+.footer-logo {
+    position: fixed;
+    bottom: 0px;
+    width: 100%;
+    max-width: 1024px;
+    z-index: 1000;
+}
+
+.logo-full {
+    width: 40%;
+    margin-left: 30%;
+    margin-bottom: 10px;
+}
+
+.page__content::-webkit-scrollbar {
+    display: none;
+}
+
+.logo-footer {
+    width: 100px;
+    margin-left: calc(50% - 50px);
+}
+
+.user-profile__username {
+    width: 100%;
+    text-align: center;
+    font-size: 2.2rem;
+    padding-top: 15px;
+}
+
+textarea.ant-input {
+    border-radius: 10px;
+}
